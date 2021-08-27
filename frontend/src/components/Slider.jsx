@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 
 function Slider() {
   return (
-    <div>
+    <div className="relative">
       <Carousel className="custom-slider">
         <Carousel.Item>
           <img

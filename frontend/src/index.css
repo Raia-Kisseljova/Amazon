@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #eaeded;
 }
+
 #root {
   background-color: #232f3e;
 }
@@ -72,8 +73,8 @@ code {
   font-weight: 500;
 }
 
-#root > div:nth-child(2) > div > ol {
-  display: none;
+.carousel-indicators {
+  display: none !important;
 }
 
 .mininav {
@@ -92,4 +93,48 @@ code {
 
 .to-the-right span {
   margin-right: 10px;
+}
+
+.relative {
+  position: relative;
+  border: none !important;
+  outline: none !important;
+}
+
+.relative img {
+  border: none !important;
+  outline: none !important;
+}
+
+.carousel-item {
+  border: none !important;
+  outline: none !important;
+}
+
+.test {
+  position: absolute;
+  top: 530px;
+}
+
+.carousel-control-next {
+  bottom: 80px !important;
+}
+
+.carousel-control-prev {
+  bottom: 80px !important;
+}
+
+.cards {
+  margin-bottom: 25px;
+  border: none !important;
+}
+
+.cards img {
+  padding: 10px;
+}
+
+.custom-btn {
+  background-color: transparent !important;
+  color: #131921 !important;
+  border: none !important;
 }

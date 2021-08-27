@@ -41,7 +41,7 @@ productRouter
   .put(async (req, res, next) => {
     try {
       const data = await Product.update(req.body, {
-        where: { productId: req.params.id },
+        where: { id: req.params.id },
         returning: true,
       });
       res.send(data[1][0]);
@@ -54,7 +54,7 @@ productRouter
     try {
       const rows = await Product.destroy({
         where: {
-          productId: req.params.id,
+          id: req.params.id,
         },
       });
       if (rows > 0) {
